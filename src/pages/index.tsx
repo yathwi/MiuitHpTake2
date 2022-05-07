@@ -1,9 +1,19 @@
-const Home: React.FC = () => (
-  <main className='mx-auto max-w-6xl py-6'>
-    <h1 className='text-lg font-bold text-primary-800'>
-      Welcome to Kikagaku Next.js Starter Kit!!
-    </h1>
-  </main>
-);
+import PageHeader from "@/component/PageHeader"
+import Head from "next/head"
+import Hero from "@/component/Hero"
+import AboutCompany from "@/component/aboutCompany"
+import AboutMe from "@/component/aboutMe"
+import Footer from "@/component/Footer"
 
-export default Home;
+export default function Home(){
+  return(
+    <>
+    <Head><title>株式会社 Miuit</title></Head>
+    <PageHeader />
+    <Hero />
+    <AboutCompany />
+    <AboutMe />
+    <Footer />
+    </>
+  )
+}
