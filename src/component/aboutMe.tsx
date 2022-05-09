@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function AboutMe(){
   return(
-    <div className=" grid grid-cols-2 h-[32rem] bg-gray-100 pt-28">
+    <div className=" grid grid-cols-2 h-[32rem] bg-primary-main pt-28">
       <div className="mx-auto">
         <Image src="/img/Me.png" width={300} height={300} alt="pic" />
       </div>
